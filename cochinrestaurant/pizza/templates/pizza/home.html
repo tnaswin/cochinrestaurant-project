@@ -1,2 +1,7 @@
-<h1>Cochin Restaurant</h1>
-<a href="{% url 'order' %}">Order a pizza.</a>
+{% extends 'pizza/base.html' %}
+{% block 'body' %}
+<div class="text-center">
+    {% load static %}
+    <img src="{% static 'cochinrestaurant.jpg' %}" class="img-fluid" alt="Cochin Restaurant" style="width:100%; height:auto; margin:0 auto;">
+</div>
+{% endblock %}
